@@ -30,10 +30,10 @@
 				</ul>
 			</nav>
 			<div class="user__nav">
-				<button class="btn btn_header" type="button">Поиск</button>
-				<button class="btn btn_header" type="button">Вход</button>
-				<button class="btn btn_header" type="button">Пусто</button>
-			</div>
+					<a class="btn btn_header" href="#">Поиск</a>
+					<a class="btn btn_header" href="#">Вход</a>
+					<a class="btn btn_header" href="#">Пусто</a>
+				</div>
 			<div class="header__contacts">
 				<p>С 10 до 20, ежедневно</p> 
 				<a href="tel:+88124502525">8 812 450-25-25</a>
@@ -46,8 +46,40 @@
 				<a>Сливочное</a>
 			</div>
 			<h2>Сливочное мороженое</h2>
-			<form action="#" class="filter">
+			<form class="catalog__filter" action="https://echo.htmlacademy.ru" method="get">
+				<div class="filter_sort">
+					<select name="sort" id="filter_sort_input">
+						<option value="popular" selected>по популярности</option>
+					</select>
+					<label for="filter_sort_input">Сортировка</label>
+				</div>
+				<div class="filter_price">
 
+				</div>
+				<div class="filter_fat">
+					<p>Жирность</p>
+					<input type="radio" name="fat" id="fat_0_input">
+					<label for="fat_0">0%</label>
+					<input type="radio" name="fat" id="fat_10_input">
+					<label for="fat_10">до 10%</label>
+					<input type="radio" name="ffat" id="fat_30_input">
+					<label for="fat_30">до 30%</label>
+					<input type="radio" name="fat" id="fat_30_more_input ">
+					<label for="fat_30_more">выше 30%</label>
+				</div>
+				<div class="filter__fillers">
+					<input type="checkbox" name="chocolate" id="chocolate_filler">
+					<label for="chocolate_filler">шоколадные</label>
+					<input type="checkbox" name="shugar" id="shugar_filler">
+					<label for="shugar_filler">сахарные присыпки</label>
+					<input type="checkbox" name="fruits" id="fruits_filler">
+					<label for="fruits_filler">фрукты</label>
+					<input type="checkbox" name="syrup" id="syrup_filler">
+					<label for="syrup_filler">сиропы</label>
+					<input type="checkbox" name="jam" id="jam_filler">
+					<label for="jam_filler">джемы</label>
+				</div>
+				<button type="submit">Применить</button>
 			</form>
 			<section class="goods__container">
 				<div class="goods__item">
@@ -55,21 +87,24 @@
 						<img src="img/icecream_1.jpg" width="267" height="267" alt="Мороженое">
 					</div>
 					<h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-					<p>310&#8381;<span>/кг</span></p>  
+					<p>310&#8381;<span>/кг</span></p>
+					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>  
 				</div>
 				<div class="goods__item">
 					<div class="goods__img__block">
 						<img src="img/icecream_2.jpg" width="267" height="267" alt="Мороженое">
 					</div>
 					<h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
-					<p>380&#8381;<span>/кг</span></p>  
+					<p>380&#8381;<span>/кг</span></p>
+					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>  
 				</div>
 				<div class="goods__item">
 					<div class="goods__img__block">
 						<img src="img/icecream_3.jpg" width="267" height="267" alt="Мороженое">
 					</div>
 					<h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
-					<p>355&#8381;<span>/кг</span></p>  
+					<p>355&#8381;<span>/кг</span></p>
+					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>  
 				</div>
 				<div class="goods__item">
 					<div class="goods__img__block">
@@ -77,62 +112,71 @@
 					</div>
 					<h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
 					<p>415&#8381;<span>/кг</span></p>
+					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>
 				</div>  
 				<div class="goods__item">
 					<div class="goods__img__block">
 						<img src="img/icecream_5.jpg" width="267" height="267" alt="Мороженое">
 					</div>
 					<h3><a href="#">Сливочное с брусничным джемом</a></h3>
-					<p>325&#8381;<span>/кг</span></p>  
+					<p>325&#8381;<span>/кг</span></p>
+					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>  
 				</div>
 				<div class="goods__item">
 					<div class="goods__img__block">
 						<img src="img/icecream_6.jpg" width="267" height="267" alt="Мороженое">
 					</div>
 					<h3><a href="#">Сливочно-черничное с цельными ягодами черники</a></h3>
-					<p>410&#8381;<span>/кг</span></p>  
+					<p>410&#8381;<span>/кг</span></p>
+					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>  
 				</div>
 				<div class="goods__item">
 					<div class="goods__img__block">
 						<img src="img/icecream_7.jpg" width="267" height="267" alt="Мороженое">
 					</div>
 					<h3><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
-					<p>375&#8381;<span>/кг</span></p>  
+					<p>375&#8381;<span>/кг</span></p>
+					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>  
 				</div>
 				<div class="goods__item">
 					<div class="goods__img__block">
 						<img src="img/icecream_8.jpg" width="267" height="267" alt="Мороженое">
 					</div>
 					<h3><a href="#">Сливочное с шоколадной стружкой</a></h3>
-					<p>320&#8381;<span>/кг</span></p>  
+					<p>320&#8381;<span>/кг</span></p>
+					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a> 
 				</div>
 				<div class="goods__item">
 					<div class="goods__img__block">
 						<img src="img/icecream_9.jpg" width="267" height="267" alt="Мороженое">
 					</div>
 					<h3><a href="#">Сливочно-ванильное с кусочками шоколада</a></h3>
-					<p>440&#8381;<span>/кг</span></p>  
+					<p>440&#8381;<span>/кг</span></p>
+					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>  
 				</div>
 				<div class="goods__item">
 					<div class="goods__img__block">
 						<img src="img/icecream_10.jpg" width="267" height="267" alt="Мороженое">
 					</div>
 					<h3><a href="#">Сливочноe с ментоловым сиропом</a></h3>
-					<p>435&#8381;<span>/кг</span></p>  
+					<p>435&#8381;<span>/кг</span></p>
+					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>  
 				</div>
 				<div class="goods__item">
 					<div class="goods__img__block">
 						<img src="img/icecream_11.jpg" width="267" height="267" alt="Мороженое">
 					</div>
 					<h3><a href="#">Сливочное с кусочками черного шоколада</a></h3>
-					<p>355&#8381;<span>/кг</span></p>  
+					<p>355&#8381;<span>/кг</span></p>
+					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a> 
 				</div>
 				<div class="goods__item">
 					<div class="goods__img__block">
 						<img src="img/icecream_12.jpg" width="267" height="267" alt="Мороженое">
 					</div>
 					<h3><a href="#">Сливочное с мятным сиропом</a></h3>
-					<p>420&#8381;<span>/кг</span></p>  
+					<p>420&#8381;<span>/кг</span></p>
+					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>  
 				</div>
 			</section>
 			<div class="catalog__pages__navigation"></div>
@@ -162,10 +206,54 @@
 				</ul>
 			</div>
 			<div class="copyrights__container">
-				<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy-small.png" alt="Лого HTMLAcademy"></a>
+				<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy-small.svg" alt="Лого HTMLAcademy"></a>
 				<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#64; 2018</p>
 			</div>
 		</footer>
 	</div>
+
+	<div class="pop-up__search">
+			<form action="https://echo.htmlacademy.ru" method="get">
+				<label class="visually-hidden" for="search_input">Введите поисковый запрос</label>
+				<input type="search" id="search_input" placeholder="Что ищем?">
+			</form>
+		</div>
+
+		<div class="pop-up__login">
+			<form action="https://echo.htmlacademy.ru" method="post">
+				<div>
+					<label class="visually-hidden" for="login_email_input">Введите адрес электронной почты</label>
+					<input type="email" name="login_email" id="login_email_input">
+				</div>
+				<div>
+					<label class="visually-hidden" for="login_password_input">введите пароль</label>
+					<input type="password" name="login_password" id="login_password_input">
+				</div>
+					<button class="btn" type="submit" id="login_btn">Войти</button>
+				<div>
+					<a href="#">Забыли пароль?</a>
+					<a href="#">Новая регистрация</a>
+				</div>
+			</form>
+		</div>
+
+		<div class="pop-up__basket">
+			<table>
+				<tbody>
+					<tr>
+						<th>Пломбир с апельсиновым джемом</th>
+						<td>1,5 кг х <span>200 руб.</span></td>
+						<td>300 руб.</td>
+					</tr>
+					<tr>
+						<th>Клубничный пломбир с присыпкой из белого шоколада</th>
+						<td>1,5 кг х <span>300 руб.</span></td>
+						<td>450 руб.</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>Итого: 750р.</p>
+			<button class="btn" type="submit">Оформить заказ</button>
+		</div>
 </body>
 </html>
