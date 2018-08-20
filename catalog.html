@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Глейси Каталог</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,7 +12,7 @@
 		<header class="header__main">
 			<div class="logo__block">
 				<a href="index.html"><img src="img/main_logo.svg" width="154" height="64" alt="Логотип сайта"></a>
-			</div>  
+			</div>
 			<nav class="main__nav">
 				<ul class="main__menu">
 					<li>
@@ -35,7 +35,7 @@
 					<a class="btn btn_header" href="#">Пусто</a>
 				</div>
 			<div class="header__contacts">
-				<p>С 10 до 20, ежедневно</p> 
+				<p>С 10 до 20, ежедневно</p>
 				<a href="tel:+88124502525">8 812 450-25-25</a>
 			</div>
 		</header>
@@ -54,20 +54,26 @@
 					<label for="filter_sort_input">Сортировка</label>
 				</div>
 				<div class="filter_price">
-
+          <p>Цена: 100 руб. – 500 руб.</p>
+          <div class="price-range__box">
+            <div class="price-range-control_line"></div>
+            <button class="price-range-control_left" type="button">Левый регулятор</button>
+            <button class="price-range-control_right" type="button">Правый регулятор</button>
+          </div>
 				</div>
 				<div class="filter_fat">
 					<p>Жирность</p>
 					<input type="radio" name="fat" id="fat_0_input">
-					<label for="fat_0">0%</label>
+					<label for="fat_0_input">0%</label>
 					<input type="radio" name="fat" id="fat_10_input">
-					<label for="fat_10">до 10%</label>
-					<input type="radio" name="ffat" id="fat_30_input">
-					<label for="fat_30">до 30%</label>
-					<input type="radio" name="fat" id="fat_30_more_input ">
-					<label for="fat_30_more">выше 30%</label>
+					<label for="fat_10_input">до 10%</label>
+					<input type="radio" name="fat" id="fat_30_input">
+					<label for="fat_30_input">до 30%</label>
+					<input type="radio" name="fat" id="fat_30_more_input">
+					<label for="fat_30_more_input">выше 30%</label>
 				</div>
 				<div class="filter__fillers">
+          <p>Наполнители</p>
 					<input type="checkbox" name="chocolate" id="chocolate_filler">
 					<label for="chocolate_filler">шоколадные</label>
 					<input type="checkbox" name="shugar" id="shugar_filler">
@@ -84,99 +90,99 @@
 			<section class="goods__container">
 				<div class="goods__item">
 					<div class="goods__img__block">
-						<img src="img/icecream_1.jpg" width="267" height="267" alt="Мороженое">
+						<img src="img/icecream_1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					</div>
 					<h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
 					<p>310&#8381;<span>/кг</span></p>
-					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>  
+					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>
 				</div>
 				<div class="goods__item">
 					<div class="goods__img__block">
-						<img src="img/icecream_2.jpg" width="267" height="267" alt="Мороженое">
+						<img src="img/icecream_2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
 					</div>
 					<h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
 					<p>380&#8381;<span>/кг</span></p>
-					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>  
+					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>
 				</div>
 				<div class="goods__item">
 					<div class="goods__img__block">
-						<img src="img/icecream_3.jpg" width="267" height="267" alt="Мороженое">
+						<img src="img/icecream_3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 					</div>
 					<h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
 					<p>355&#8381;<span>/кг</span></p>
-					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>  
+					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>
 				</div>
 				<div class="goods__item">
 					<div class="goods__img__block">
-						<img src="img/icecream_4.jpg" width="267" height="267" alt="Мороженое">
+						<img src="img/icecream_4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
 					</div>
 					<h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
 					<p>415&#8381;<span>/кг</span></p>
 					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>
-				</div>  
+				</div>
 				<div class="goods__item">
 					<div class="goods__img__block">
-						<img src="img/icecream_5.jpg" width="267" height="267" alt="Мороженое">
+						<img src="img/icecream_5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
 					</div>
 					<h3><a href="#">Сливочное с брусничным джемом</a></h3>
 					<p>325&#8381;<span>/кг</span></p>
-					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>  
+					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>
 				</div>
 				<div class="goods__item">
 					<div class="goods__img__block">
-						<img src="img/icecream_6.jpg" width="267" height="267" alt="Мороженое">
+						<img src="img/icecream_6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
 					</div>
 					<h3><a href="#">Сливочно-черничное с цельными ягодами черники</a></h3>
 					<p>410&#8381;<span>/кг</span></p>
-					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>  
+					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>
 				</div>
 				<div class="goods__item">
 					<div class="goods__img__block">
-						<img src="img/icecream_7.jpg" width="267" height="267" alt="Мороженое">
+						<img src="img/icecream_7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
 					</div>
 					<h3><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
 					<p>375&#8381;<span>/кг</span></p>
-					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>  
+					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>
 				</div>
 				<div class="goods__item">
 					<div class="goods__img__block">
-						<img src="img/icecream_8.jpg" width="267" height="267" alt="Мороженое">
+						<img src="img/icecream_8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
 					</div>
 					<h3><a href="#">Сливочное с шоколадной стружкой</a></h3>
 					<p>320&#8381;<span>/кг</span></p>
-					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a> 
+					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>
 				</div>
 				<div class="goods__item">
 					<div class="goods__img__block">
-						<img src="img/icecream_9.jpg" width="267" height="267" alt="Мороженое">
+						<img src="img/icecream_9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
 					</div>
 					<h3><a href="#">Сливочно-ванильное с кусочками шоколада</a></h3>
 					<p>440&#8381;<span>/кг</span></p>
-					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>  
+					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>
 				</div>
 				<div class="goods__item">
 					<div class="goods__img__block">
-						<img src="img/icecream_10.jpg" width="267" height="267" alt="Мороженое">
+						<img src="img/icecream_10.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
 					</div>
 					<h3><a href="#">Сливочноe с ментоловым сиропом</a></h3>
 					<p>435&#8381;<span>/кг</span></p>
-					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>  
+					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>
 				</div>
 				<div class="goods__item">
 					<div class="goods__img__block">
-						<img src="img/icecream_11.jpg" width="267" height="267" alt="Мороженое">
+						<img src="img/icecream_11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
 					</div>
 					<h3><a href="#">Сливочное с кусочками черного шоколада</a></h3>
 					<p>355&#8381;<span>/кг</span></p>
-					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a> 
+					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>
 				</div>
 				<div class="goods__item">
 					<div class="goods__img__block">
-						<img src="img/icecream_12.jpg" width="267" height="267" alt="Мороженое">
+						<img src="img/icecream_12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
 					</div>
 					<h3><a href="#">Сливочное с мятным сиропом</a></h3>
 					<p>420&#8381;<span>/кг</span></p>
-					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>  
+					<a href="#" class="btn goods__view__btn">Быстрый просмотр</a>
 				</div>
 			</section>
 			<div class="catalog__pages__navigation"></div>
@@ -206,7 +212,7 @@
 				</ul>
 			</div>
 			<div class="copyrights__container">
-				<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy-small.svg" alt="Лого HTMLAcademy"></a>
+				<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy-small.svg" alt="Лого HTMLAcademy" width="108" height="39"></a>
 				<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#64; 2018</p>
 			</div>
 		</footer>
@@ -226,10 +232,10 @@
 					<input type="email" name="login_email" id="login_email_input">
 				</div>
 				<div>
-					<label class="visually-hidden" for="login_password_input">введите пароль</label>
+					<label class="visually-hidden" for="login_password_input">Введите пароль</label>
 					<input type="password" name="login_password" id="login_password_input">
 				</div>
-					<button class="btn" type="submit" id="login_btn">Войти</button>
+					<button class="btn" type="submit">Войти</button>
 				<div>
 					<a href="#">Забыли пароль?</a>
 					<a href="#">Новая регистрация</a>
