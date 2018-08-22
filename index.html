@@ -10,7 +10,7 @@
 	<body>
 		<div class="wrap">
 			<header class="header_main">
-				<div>
+				<div class="main_nav_container">
 					<div class="logo_block">
 						<img src="img/main_logo.svg" width="154" height="64" alt="Логотип сайта">
 					</div>
@@ -32,9 +32,9 @@
 					</nav>
 				</div>
 				<div class="user_nav">
-					<a class="btn btn_header" href="#">Поиск</a>
-					<a class="btn btn_header" href="#">Вход</a>
-					<a class="btn btn_header" href="#">Пусто</a>
+					<a href="#">Поиск</a>
+					<a href="#">Вход</a>
+					<a href="#">Пусто</a>
 				</div>
 				<div class="contacts_header">
 					<p>С 10 до 20, ежедневно</p>
@@ -49,21 +49,21 @@
 					<div class="slider_slide">
 							<p>Крем-брюле и пломбир с малиновым джемом</p>
 							<img src="img/icecream_group_1.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
-							<a class="btn" href="#">Давайте оба!</a>
+							<a class="main_btn slide_btn" href="#">Давайте оба!</a>
 					</div>
 					<div class="slider_slide">
 							<p>Шоколадный пломбир и лимонный сорбет</p>
 							<img src="img/icecream_group_2.png" width="647" height="584" alt="Шоколадный пломбир и лимонный сорбет">
-							<a class="btn" href="#">Давайте оба!</a>
+							<a class="main_btn slide_btn" href="#">Давайте оба!</a>
 					</div>
 					<div class="slider_slide">
 							<p>Пломбир с помадкой и клубничный щербет</p>
 							<img src="img/icecream_group_3.png" width="647" height="584" alt="Пломбир с помадкой и клубничный щербет">
-							<a class="btn" href="#">Давайте оба!</a>
+							<a class="main_btn slide_btn" href="#">Давайте оба!</a>
 					</div>
-					<ul>
+					<ul class="slider_switcher_list">
 						<li>
-							<button class="slider_switcher" type="button">Первый слайд</button>
+							<button class="slider_switcher slider_switcher_active" type="button">Первый слайд</button>
 						</li>
 						<li>
 							<button class="slider_switcher" type="button">Второй слайд</button>
@@ -76,14 +76,14 @@
 				<section class="bonuses_container">
 					<h2 class="visually-hidden">Бонусы</h2>
 					<div class="bonuses_block">
-						<p>Малинка даром!</p>
+						<p class="bonuses_block_title">Малинка даром!</p>
 						<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-						<a class="btn btn_main" href="#">Хочу варенье!</a>
+						<a class="main_btn bonuses_btn" href="#">Хочу варенье!</a>
 					</div>
 					<div class="bonuses_block">
 						<p>Шоколадки даром!</p>
 						<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-						<a class="btn btn_main" href="#">Хочу шоколадки!</a>
+						<a class="main_btn bonuses_btn" href="#">Хочу шоколадки!</a>
 					</div>
 				</section>
 				<section class="goods_container">
@@ -94,7 +94,7 @@
 						</div>
 						<h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
 						<p>310&#8381;<span>/кг</span></p>
-						<a href="#" class="btn goods_view_btn">Быстрый просмотр</a>
+						<a href="#" class="main_btn goods_view_btn">Быстрый просмотр</a>
 					</div>
 					<div class="goods_item goods_item_hit">
 						<div class="goods_img_block">
@@ -102,7 +102,7 @@
 						</div>
 						<h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
 						<p>380&#8381;<span>/кг</span></p>
-						<a href="#" class="btn goods_view_btn">Быстрый просмотр</a>
+						<a href="#" class="main_btn goods_view_btn">Быстрый просмотр</a>
 					</div>
 					<div class="goods_item goods_item_hit">
 						<div class="goods_img_block">
@@ -110,7 +110,7 @@
 						</div>
 						<h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
 						<p>355&#8381;<span>/кг</span></p>
-						<a href="#" class="btn goods_view_btn">Быстрый просмотр</a>
+						<a href="#" class="main_btn goods_view_btn">Быстрый просмотр</a>
 					</div>
 					<div class="goods_item goods_item_hit">
 						<div class="goods_img_block">
@@ -118,7 +118,7 @@
 						</div>
 						<h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
 						<p>415&#8381;<span>/кг</span></p>
-						<a href="#" class="btn goods_view_btn">Быстрый просмотр</a>
+						<a href="#" class="main_btn goods_view_btn">Быстрый просмотр</a>
 					</div>
 				</section>
 				<section class="features_container">
@@ -140,7 +140,7 @@
 					<form class="subscribe_form" action="https://echo.htmlacademy.ru" method="post">
 						<label class="visually-hidden" for="subscribe_email_input">Ваша электронная почта</label>
 						<input type="email" name="email" id="subscribe_email_input" placeholder="Электронная почта">
-						<button class="btn" type="submit">Отпраить</button>
+						<button class="main_btn" type="submit">Отпраить</button>
 					</form>
 				</div>
 			</div><!-- /wrap -->
@@ -158,7 +158,7 @@
 						<a href="tel:+88124502525">8 812 450-25-25</a><br>
 						(с 10 до 20 ежедневно)
 					</p>
-					<a class="btn" href="#">Форма обратной связи</a>
+					<a class="main_btn" href="#">Форма обратной связи</a>
 				</div>
 			</section>
 		</main>
@@ -204,7 +204,7 @@
 					<label class="visually-hidden" for="login_password_input">Введите пароль</label>
 					<input type="password" name="login_password" id="login_password_input">
 				</div>
-					<button class="btn" type="submit">Войти</button>
+					<button class="main_btn" type="submit">Войти</button>
 				<div>
 					<a href="#">Забыли пароль?</a>
 					<a href="#">Новая регистрация</a>
@@ -224,7 +224,7 @@
 				<p>450 руб.</p>
 			</div>
 			<p>Итого: 750р.</p>
-			<a class="btn" href="#">Оформить заказ</a>
+			<a class="main_btn" href="#">Оформить заказ</a>
 		</div>
 
 		<div class="feedback_modal">
