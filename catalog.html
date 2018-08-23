@@ -10,37 +10,37 @@
 <body class="inner_page">
 	<div class="wrap">
 		<header class="header_main">
-      <div class="main_nav_container">
-        <div class="logo_block">
-          <img src="img/main_logo.svg" width="154" height="64" alt="Логотип сайта">
-        </div>
-        <nav class="main_nav">
-          <ul class="main_menu">
-            <li>
-              <a class="current_page" href="#">Каталог</a>
-              <ul class="catalog_container main_form">
-                <li><a href="#"><b>Новинки</b></a></li>
-                <li><a class="current_page">Сливочное</a></li>
-                <li><a href="#">Щербеты</a></li>
-                <li><a href="#">Фруктовый лед</a></li>
-                <li><a href="#">Мелорин</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">О Компании</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="user_nav">
-        <a href="#">Поиск</a>
-        <a href="#">Вход</a>
-        <a href="#">Пусто</a>
-      </div>
-      <div class="contacts_header">
-        <p>С 10 до 20, ежедневно</p>
-        <a href="tel:+88124502525">8 812 450-25-25</a>
-      </div>
-    </header>
+			<div class="main_nav_container">
+				<div class="logo_block">
+					<a href="index.html"><img src="img/main_logo.svg" width="154" height="64" alt="Логотип сайта"></a>
+				</div>
+				<nav class="main_nav">
+					<ul class="main_menu">
+						<li>
+							<a class="current_page" href="#">Каталог</a>
+							<ul class="catalog_container main_form">
+								<li><a href="#"><b>Новинки</b></a></li>
+								<li><a class="current_page">Сливочное</a></li>
+								<li><a href="#">Щербеты</a></li>
+								<li><a href="#">Фруктовый лед</a></li>
+								<li><a href="#">Мелорин</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">О Компании</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="user_nav">
+				<a href="#">Поиск</a>
+				<a href="#">Вход</a>
+				<a href="#">Пусто</a>
+			</div>
+			<div class="contacts_header">
+				<p>С 10 до 20, ежедневно</p>
+				<a href="tel:+88124502525">8 812 450-25-25</a>
+			</div>
+		</header>
 		<main>
 			<div class="pages_navigation">
 				<a class="standart_link" href="index.html">Главная</a>
@@ -60,28 +60,30 @@
 				</div>
 				<div class="filter_item filter_price">
 					<p>Цена: 100 руб. – 500 руб.</p> <!--Заменить на поля ввода текста-->
-					<div class="price-range_box">
-						<div class="price-range-control_line"></div>
-						<button class="price-range-control_left" type="button">Левый регулятор</button>
-						<button class="price-range-control_right" type="button">Правый регулятор</button>
+					<div class="price_range_box">
+						<div class="price_range_control_line">
+							<div class="price_range_control_line_center"></div>
+							<button class="price_range_control price_range_control_left" type="button">Левый регулятор</button>
+							<button class="price_range_control price_range_control_right" type="button">Правый регулятор</button>
+						</div>
 					</div>
 				</div>
 				<div class="filter_item filter_fat">
 					<p>Жирность</p>
-					<input type="radio" name="fat" id="fat_0_input">
+					<input type="radio" name="fat" value="fat_0" id="fat_0_input" checked disabled>
 					<label for="fat_0_input">0%</label>
-					<input type="radio" name="fat" id="fat_10_input">
+					<input type="radio" name="fat" value="fat_10" id="fat_10_input">
 					<label for="fat_10_input">до 10%</label>
-					<input type="radio" name="fat" id="fat_30_input">
+					<input type="radio" name="fat" value="fat_30" id="fat_30_input">
 					<label for="fat_30_input">до 30%</label>
-					<input type="radio" name="fat" id="fat_30_more_input">
+					<input type="radio" name="fat" value="fat_30_more" id="fat_30_more_input">
 					<label for="fat_30_more_input">выше 30%</label>
 				</div>
 				<div class="filter_item filter_fillers">
 					<p>Наполнители</p>
-					<input type="checkbox" name="chocolate" id="chocolate_filler">
+					<input type="checkbox" name="chocolate" id="chocolate_filler" checked>
 					<label for="chocolate_filler">шоколадные</label>
-					<input type="checkbox" name="shugar" id="shugar_filler">
+					<input type="checkbox" name="shugar" id="shugar_filler" checked>
 					<label for="shugar_filler">сахарные присыпки</label>
 					<input type="checkbox" name="fruits" id="fruits_filler">
 					<label for="fruits_filler">фрукты</label>
@@ -94,13 +96,13 @@
 			</form>
 			<section class="goods_container">
 				<div class="goods_item">
-          <div class="goods_img_block">
-            <img src="img/icecream_1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-          </div>
-          <h3><a class="standart_link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-          <p class="goods_price">310&#8381;<span>/кг</span></p>
-          <a href="#" class="main_btn goods_view_btn">Быстрый просмотр</a>
-        </div>
+					<div class="goods_img_block">
+						<img src="img/icecream_1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+					</div>
+					<h3><a class="standart_link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
+					<p class="goods_price">310&#8381;<span>/кг</span></p>
+					<a href="#" class="main_btn goods_view_btn">Быстрый просмотр</a>
+				</div>
 				<div class="goods_item">
 					<div class="goods_img_block">
 						<img src="img/icecream_2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
@@ -190,17 +192,17 @@
 					<a href="#" class="main_btn goods_view_btn">Быстрый просмотр</a>
 				</div>
 			</section>
-			<div class="catalog_pages_navigation"></div>
-				<a class="visually-hidden" href="#">Предыдущая страница</a>
-				<a href="#">1</a>
+			<div class="catalog_pagination">
+				<a href="#"><</a>
+				<a class="catalog_pagination_current" href="#">1</a>
 				<a href="#">2</a>
 				<a href="#">3</a>
 				<a href="#">4</a>
 				<a href="#">5</a>
-				<a class="visually-hidden" href="#">Следующая страница</a>
+				<a href="#">></a>
+			</div>
 		</main>
 		<footer class="footer_main">
-			<div class="wrap">
 				<div class="social_btn_container">
 					<a href="#" class="social_btn_item social_btn_item_twitter"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z"/></svg>Мы в twitter</a>
 					<a href="#" class="social_btn_item social_btn_item_instagramm"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><g><path d="M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z"/><path d="M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zM18.637 10.302h3.039v3.039h-3.039z"/><path d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.955 21.698a2.285 2.285 0 0 1-2.279 2.279H10.279A2.285 2.285 0 0 1 8 21.698V10.302a2.286 2.286 0 0 1 2.279-2.279h11.396a2.286 2.286 0 0 1 2.279 2.279v11.396z"/></g></svg>Мы в instagramm</a>
@@ -221,8 +223,8 @@
 					<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HTMLAcademy"></a>
 					<p>Сделано в <a class="standart_link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#64; 2018</p>
 				</div>
-			</div>
-		</footer>
+			</footer>
+		</div>
 
 		<div class="pop-up_search">
 			<form class="main_form search_form" action="https://echo.htmlacademy.ru" method="get">
