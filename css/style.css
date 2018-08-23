@@ -12,6 +12,9 @@ body{
 
   box-sizing: border-box;
 }
+.inner_page{
+  color: #ffffff;
+}
 
 a{
 	color: #ffffff;
@@ -39,6 +42,8 @@ a{
 }
 
 .main_form{
+  color: #323232;
+
   background-color: #f8f7f4;
 }
 
@@ -69,6 +74,28 @@ a{
 	border-bottom: 1px solid rgba(249, 172, 159, 0.3);
 }
 
+.main_nav .current_page,
+.main_nav .current_page:hover,
+.main_nav .current_page:active{
+  color: #ffffff;
+
+  background-color: #d07058;
+  border: none;
+}
+
+.visually-hidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	font-size: 0px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	white-space: nowrap;
+}
+
 /* Header */
 
 .main_menu{
@@ -80,6 +107,7 @@ a{
 	font-weight: 700;
 	color: #ffffff;
 
+  background-color: transparent;
 	border-bottom: 1px solid #b2b2b2;
 }
 .main_nav a:hover,
@@ -142,7 +170,58 @@ a{
 	color: #ffffff;
 }
 
-/* Main */
+/* Footer */
+
+.social_btn_item{
+  font-size: 0px;
+}
+.social_btn_item svg{
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  fill: rgba(255, 255, 255, 0.8);
+}
+.social_btn_item:hover svg,
+.social_btn_item:focus svg{
+  border-color: rgba(255, 255, 255, 0.7);
+
+  fill: #ffffff;
+}
+.social_btn_item:active svg{
+  border-color: rgba(255, 255, 255, 0.7);
+
+  fill: rgba(233, 233, 233, 1);
+}
+
+.info_links_block{
+  list-style: none;
+}
+.info_links_block a{
+  font-size: 13px;
+  line-height: 18px;
+}
+.info_links_block span{
+  position: relative;
+
+  font-weight: 700;
+}
+.info_links_block span::before{
+  content: '';
+
+  position: absolute;
+
+  display: block;
+  width: 15px;
+  height: 13px;
+  margin: 5px -20px;
+
+  background-image: url(/img/heart.svg);
+}
+.copyrights_container p{
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* Main Index.html*/
 
 .slider_slide p{
 	font-size: 60px;
@@ -154,14 +233,15 @@ a{
 	list-style: none;
 }
 .slider_switcher{
-	width: 21px;
+  width: 21px;
 	height: 21px;
 
-	font-size: 0px;
+  font-size: 0px;
+  color: #ffffff;
 
 	background-color: transparent;
 	border: 2px solid #ffffff;
-	border-radius: 50%;
+  border-radius: 50%;
 
   box-sizing: border-box;
 	cursor: pointer;
@@ -315,55 +395,53 @@ a{
   font-weight: 700;
 }
 
-/* Footer */
+/* Main Catalog.html */
 
-.social_btn_item{
-  font-size: 0px;
-}
-.social_btn_item svg{
-  border: 3px solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  fill: rgba(255, 255, 255, 0.8);
-}
-.social_btn_item:hover svg,
-.social_btn_item:focus svg{
-  border-color: rgba(255, 255, 255, 0.7);
-
-  fill: #ffffff;
-}
-.social_btn_item:active svg{
-  border-color: rgba(255, 255, 255, 0.7);
-
-  fill: rgba(233, 233, 233, 1);
+.pages_navigation a{
+  font-size: 14px;
+  line-height: 16px;
 }
 
-.info_links_block{
-  list-style: none;
-}
-.info_links_block a{
-  font-size: 13px;
-  line-height: 18px;
-}
-.info_links_block span{
-  position: relative;
-
+.page_title{
+  font-size: 35px;
+  line-height: 41px;
   font-weight: 700;
 }
-.info_links_block span::before{
-  content: '';
 
-  position: absolute;
-
-  display: block;
-  width: 15px;
-  height: 13px;
-  margin: 5px -20px;
-
-  background-image: url(/img/heart.svg);
+.catalog_filter{
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
 }
-.copyrights_container p{
-  font-size: 12px;
-  line-height: 18px;
+.filter_item{
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.filter_sort_select{
+  color: #ffffff;
+
+  background-color: transparent;
+  border: none;
+}
+.filter_btn{
+  color: #ffffff;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #ffffff;
+
+  box-sizing: border-box;
+}
+.filter_btn:hover{
+  color: #323232;
+
+  background: #fbfcfb;
+}
+.filter_btn:active{
+  background-color: #ededed;
+  border-color: transparent;
+  box-shadow: 0 -2px 1px #696969;
+  /* box-sizing: border-box; */
+
+  transform: translate(0, 0);
 }
 
 /* Modal and pop-up */
@@ -408,16 +486,4 @@ a{
 .feedback_form .input_field{
   font-size: 16px;
   line-height: 24px;
-}
-.visually-hidden {
-	border: 0;
-	clip: rect(0 0 0 0);
-	font-size: 0px;
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-	white-space: nowrap;
 }
