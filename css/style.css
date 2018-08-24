@@ -140,7 +140,7 @@ a{
 	border-bottom: none;
 }
 .catalog_container .catalog_novelty{
-  font-weight: 700;
+	font-weight: 700;
 }
 .catalog_container a:hover,
 .catalog_container a:focus{
@@ -181,7 +181,7 @@ a{
 .contacts_header a:hover,
 .contacts_header a:hover,
 .contacts_header a:active{
-  color: #ffbc9e;
+	color: #ffbc9e;
 }
 
 /* Footer */
@@ -232,12 +232,25 @@ a{
 }
 .copyrights_container p{
 	font-size: 12px;
-  line-height: 18px;
-  color: #ffffff;
+	line-height: 18px;
+	color: #ffffff;
 }
 
 /* Main Index.html*/
 
+.slider_slide{
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+.slide_first{
+	background-image: url(../img/icecream_group_1.png);
+}
+.slide_second{
+	background-image: url(../img/icecream_group_2.png);
+}
+.slide_third{
+	background-image: url(../img/icecream_group_3.png);
+}
 .slider_slide p{
 	font-size: 60px;
 	line-height: 60px;
@@ -411,17 +424,17 @@ a{
 }
 
 .map_block{
-  width: 1200px;
-  height: 430px;
+	width: 1200px;
+	height: 430px;
 
-  background-color: #ece5c9;
-  background-image: url('../img/map.jpg');
-  background-position: top center;
-  background-repeat: no-repeat;
+	background-color: #ece5c9;
+	background-image: url('../img/map.jpg');
+	background-position: top center;
+	background-repeat: no-repeat;
 }
 .contacts_wrap{
-  max-width: 1200px;
-  margin: 0 auto;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 /* Main Catalog.html */
@@ -481,8 +494,8 @@ a{
 
 	font-size: 0px;
 
-  /* background-color: #ffffff; */
-  background-image: radial-gradient(ellipse at center, rgba(171,171,171,1) 0%,rgba(171,171,171,1) 16%,rgba(255,255,255,1) 17%,rgba(255,255,255,1) 100%);
+	/* background-color: #ffffff; */
+	background-image: radial-gradient(ellipse at center, rgba(171,171,171,1) 0%,rgba(171,171,171,1) 16%,rgba(255,255,255,1) 17%,rgba(255,255,255,1) 100%);
 	border: none;
 	border-radius: 50%;
 
@@ -551,7 +564,7 @@ a{
 	opacity: 0.4;
 }
 .filter_fat input[type="radio"]:checked + label::before{
-  background-image: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 40%,rgba(255,255,255,0) 41%,rgba(255,255,255,0) 72%,rgba(255,255,255,1) 73%,rgba(255,255,255,1) 99%,rgba(255,255,255,1) 100%);
+	background-image: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 40%,rgba(255,255,255,0) 41%,rgba(255,255,255,0) 72%,rgba(255,255,255,1) 73%,rgba(255,255,255,1) 99%,rgba(255,255,255,1) 100%);
 }
 .filter_btn{
 	color: #ffffff;
