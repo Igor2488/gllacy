@@ -147,12 +147,17 @@ input[type="radio"].visually-hidden {
 }
 .logo_block{
 	margin-right: 10px;
+
+	font-size: 0;
+	line-height: 0;
 }
 .logo_block img{
 	max-width: 154px;
+	margin: 0;
+	padding: 0;
 }
 .main_nav_item{
-	margin-right: 12px;
+	margin-right: 3px;
 }
 .main_nav_item:last-child{
 	margin-right: 0;
@@ -170,7 +175,7 @@ input[type="radio"].visually-hidden {
 	list-style: none; 
 }
 .main_nav_item a{
-	padding: 7px 13px;
+	padding: 7px 13px 6px;
 
 	font-size: 16px;
 	line-height: 18px;
@@ -195,7 +200,7 @@ input[type="radio"].visually-hidden {
 
 .catalog_container{
 	position: absolute;
-	top: 30px;
+	top: 55px;
 	left: -7px;
 
 	display: none;
@@ -262,9 +267,12 @@ input[type="radio"].visually-hidden {
 	height: 100%;
 	margin-bottom: 18px;
 }
-.user_nav a{
+.user_nav_link{
+	position: relative;
+
 	margin-right: 10px;
-	padding: 7px 13px;
+	padding: 8px 16px;
+	padding-left: 45px;
 
 	font-size: 14px;
 	line-height: 16px;
@@ -274,14 +282,35 @@ input[type="radio"].visually-hidden {
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 20px;
 }
-.user_nav a:hover,
-.user_nav a:focus{
+.user_nav_link:hover,
+.user_nav_link:focus{
 	color: #323232;
 
 	background-color: #ffffff;
 }
-.user_nav a:last-child{
+.user_nav_link:last-child{
 	margin-right: 0;
+}
+.user_nav_link_search{
+	padding: 8px;
+
+	font-size: 0px;
+	line-height: 0;
+}
+.user_nav_link svg{
+	position: absolute;
+	top: 6px;
+	left: 16px;
+
+	fill: #ffffff;
+}
+.user_nav_link:hover svg,
+.user_nav_link:focus svg{
+	fill: #000000;
+}
+.user_nav_link_search svg{
+	position: static;
+	margin-right: 0px;
 }
 
 .contacts_header{
