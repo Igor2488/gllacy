@@ -57,6 +57,30 @@ img {
 	background-image: linear-gradient(to bottom, rgba(231, 74, 53, 1) 0%, rgba(242, 104, 67, 1) 100%);
 	box-shadow: 0 -2px 2px rgba(172, 16, 0, 0.64);
 }
+.close_btn{
+	margin: 0;
+	padding: 0;
+	
+	font-size: 0;
+	line-height: 0;
+
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+.close_btn::before,
+.close_btn::after{
+	content: '';
+
+	position: absolute;
+
+	background-color: #000000;
+}.close_btn::before{
+	transform: rotate(45deg);
+}
+.close_btn::after{
+	transform: rotate(-45deg);
+}
 
 .main_form{
 	color: #323232;
@@ -1091,7 +1115,8 @@ footer .block_wrap{
 
 .pop-up_search,
 .pop-up_login,
-.pop-up_basket{
+.pop-up_basket,
+.feedback_modal{
 	position: absolute;
 	top: 59px;
 }
@@ -1099,7 +1124,13 @@ footer .block_wrap{
 	right: 0px;
 }
 .pop-up_login{
-	right: 485px;
+	right: 0px;
+}
+.pop-up_basket{
+	right: 730px;
+}
+.feedback_modal{
+	right: 0px;
 }
 .search_form,
 .login_form{
@@ -1134,6 +1165,7 @@ footer .block_wrap{
 .login_form_bottom{
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
 }
 .login_form .standart_link:hover,
 .login_form .standart_link:focus{
@@ -1152,20 +1184,77 @@ footer .block_wrap{
 	border-radius: 18%/50%;
 }
 .login_form_bottom_links{
-	/* text-align: right; */
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 120px;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+.login_form_bottom_links li{
+	margin-bottom: -4px;
 }
 
 .pop-up_basket{
 	width: 540px;
+	padding: 20px 15px;
+
+	text-align: right;
 
 	border-radius: 5px;
 }
+.basket_list{
+	margin: 0;
+	padding: 0;
+	padding-right: 15px;
+
+	list-style: none;
+}
+.basket_item{
+	display: flex;
+	align-items: flex-start;
+	height: 33px;
+	margin-bottom: 25px;
+	
+	text-align: left;
+}
+.basket_item .close_btn{
+	position: relative;
+
+	width: 11px;
+	height: 11px;
+	margin-right: 61px;
+}
+.basket_item .close_btn::before,
+.basket_item .close_btn::after{
+	left: 0;
+
+	width: 14px;
+	height: 1px;
+}
 .basket_item p{
+	margin: 0;
+	margin-right: 30px;
+	padding: 0;
+
 	font-size: 13px;
 	line-height: 16px;
 }
+.basket_item p:last-child{
+	margin-right: 0;
+}
 .basket_item span{
 	color: #999999;
+}
+.basket_item_name{
+	position: relative;
+
+	width: 217px;
+}
+.basket_item_order{
+	width: 95px;
 }
 .basket_total_cost{
 	font-size: 15px;
@@ -1174,23 +1263,67 @@ footer .block_wrap{
 }
 
 .feedback_form{
+	position: relative;
+
 	width: 477px;
+	padding: 15px 24px 25px;
 }
 .feedback_form.main_form{
+	display: flex;
+	flex-direction: column;
 	box-shadow: none;
 }
 .feedback_form p{
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+
 	font-size: 24px;
 	line-height: 28px;
 	font-weight: 500;
 }
 .feedback_form .input_field{
+	padding: 9px;
+	padding-left: 13px;
+	margin-bottom: 20px;
+
 	font-size: 16px;
 	line-height: 24px;
 }
+.feedback_form .input_field:not(textarea){
+	width: 267px;
+}
+.feedback_form textarea{
+	height: 155px;
 
+	resize: vertical;
+}
+.feedback_form .main_btn{
+	align-self: flex-end;
+	margin-top: 4px;
+	padding: 10px 23px;
+
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+
+	border-radius: 15%/50%;
+}
+.feedback_form .close_btn{
+	position: absolute;
+	top: 15px;
+	right: 24px;
+
+	width: 18px;
+	height: 18px;
+}
+.feedback_form .close_btn::before,
+.feedback_form .close_btn::after{
+	width: 18px;
+	height: 2px;
+}
 /* выявленные неисправности:
-1. подсветка кнопки каталог при наведдении на всплыв.меню
+1. подсветка кнопок меню при наведении на всплывающее окно
 2. подчеркивание ссылок в хедере
 3. увеличенный маргин над кнопкой в макете 900px в малинке-шоколадке
 4. прыгают поля в IE 
@@ -1198,4 +1331,5 @@ footer .block_wrap{
 6. попробовать перенести элементы управления на карте
 7. текст в разделе блог
 8. навигация страниц вверху каталога
-9. значек прав в футере*/
+9. значек прав в футере
+10. крестик в модалке*/
