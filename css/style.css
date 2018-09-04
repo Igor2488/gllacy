@@ -172,7 +172,7 @@ input[type="radio"].visually-hidden {
   margin: -1px;
   border: 0;
   padding: 0;
-
+	
   white-space: nowrap;
 
   -webkit-clip-path: inset(100%);
@@ -195,6 +195,7 @@ input[type="radio"].visually-hidden {
 .inner_page .page_active{
 	background-color: #d07058;
 }
+
 .site_wrap{
 	max-width: 1200px;
 	margin: 0 auto;
@@ -320,7 +321,8 @@ footer .block_wrap{
 	border-radius: 5px;
 	list-style: none;
 }
-.catalog_link:hover .catalog_container{
+.catalog_link:hover .catalog_container,
+.catalog_link:focus .catalog_container{
 	display: block;
 }
 .catalog_item .catalog_novelty{
@@ -750,6 +752,9 @@ footer .block_wrap{
 }
 .goods_item{
 	position: relative;
+
+	display: flex;
+	flex-direction: column;
 	width: 23.3%;
 	margin-right: 2.25%;
 
@@ -761,6 +766,8 @@ footer .block_wrap{
 	margin-right: 0;
 }
 .goods_img_block{
+	position: relative;
+
 	width: 100%;
 	margin-bottom: 12px;
 
@@ -790,7 +797,7 @@ footer .block_wrap{
 }
 .goods_item h3{
 	margin: 0;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	padding: 0;
 
 	font-size: 16px;
@@ -798,7 +805,7 @@ footer .block_wrap{
 }
 .goods_price{
 	position: absolute;
-	top:47%;
+	top:37%;
 	z-index: 10;
 
 	font-size: 45px;
@@ -812,10 +819,10 @@ footer .block_wrap{
 	font-size: 30px;
 }
 .goods_view_btn{
-	position: absolute;
-	z-index: 30;
+	/* position: absolute; */
+	/* z-index: 30; */
 	display: none;
-	padding: 12px 18px;
+	padding: 12px 8px;
 
 	font-size: 18px;
 	line-height: 24px;
@@ -1407,7 +1414,8 @@ footer .block_wrap{
 
 	display: none;
 }
-.user_nav_link_search:hover + .pop-up_search{
+.user_nav_link_search:hover + .pop-up_search,
+.user_nav_link_search:focus + .pop-up_search{
 	display: block;
 }
 .pop-up_login{
@@ -1416,7 +1424,8 @@ footer .block_wrap{
 
 	display: none;
 }
-.user_nav_link_login:hover + .pop-up_login{
+.user_nav_link_login:hover + .pop-up_login,
+.user_nav_link_login:focus + .pop-up_login{
 	display: block;
 }
 .pop-up_basket{
@@ -1425,13 +1434,16 @@ footer .block_wrap{
 
 	display: none;
 }
-.user_nav_link_basket:hover + .pop-up_basket{
+.user_nav_link_basket:hover + .pop-up_basket,
+.user_nav_link_basket:focus + .pop-up_basket{
 	display: block;
 }
-.user_nav_link_basket:hover .svg_basket_inner{
+.user_nav_link_basket:hover .svg_basket_inner,
+.user_nav_link_basket:focus .svg_basket_inner{
 	fill: #E84D37;
 }
-.user_nav_link_basket:hover .svg_basket_body{
+.user_nav_link_basket:hover .svg_basket_body,
+.user_nav_link_basket:focus .svg_basket_body{
 	fill: #343434;
 }
 .search_form,
@@ -1718,15 +1730,18 @@ footer .block_wrap{
 
 	opacity: 0.3;
 }
+
 /* выявленные неисправности, недоработки:
 1. подсветка кнопок меню при наведении на всплывающее окно
 2. подчеркивание ссылок в хедере
 3. увеличенный маргин над кнопкой в макете 900px в малинке-шоколадке
-4. IE прыгают поля из-за выскакивающего label 
+4. IE прыгают поля из-за выскакивающего label (все visually-hidden как-бы видны) 
 5. наведение на карточки
 6. попробовать перенести элементы управления на карте
 7. текст в разделе блог
 8. навигация страниц вверху каталога
 9. значек авторских прав в футере (заменить!)
 11. IE не совпадает цвет плейсхолдера в ie и других браузерах
-12. IE нижний паадинг полей форм меньше, чем в других браузерах*/
+12. IE нижний паадинг полей форм меньше, чем в других браузерах
+13. IE белый текст в селект
+14. всплывающие окна как сделать правильно*/
