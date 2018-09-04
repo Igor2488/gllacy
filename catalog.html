@@ -119,17 +119,19 @@
 					<h2 class="page_title">Сливочное мороженое</h2>
 					<form class="catalog_filter" action="https://echo.htmlacademy.ru" method="get">
 						<div class="filter_item filter_sort">
-							<select class="filter_sort_select" name="sort" id="filter_sort_input">
-								<option value="popular_sort" selected>по популярности</option>
-								<option value="small_price_sort">сначала недорогие</option>
-								<option value="big_price_sort">сначала дорогие</option>
-								<option value="fat_sort">по жирности</option>
-							</select>
-							<label for="filter_sort_input">Сортировка</label>
+							<p class="filter_item_label">Сортировка</p>
+							<div class="filter_item_body">
+								<select class="filter_sort_select" name="sort" id="filter_sort_input">
+									<option value="popular_sort" selected>по популярности</option>
+									<option value="small_price_sort">сначала недорогие</option>
+									<option value="big_price_sort">сначала дорогие</option>
+									<option value="fat_sort">по жирности</option>
+								</select>
+							</div>
 						</div>
 						<div class="filter_item filter_price">
-							<p>Цена: 100 руб. – 500 руб.</p> <!--Заменить на поля ввода текста-->
-							<div class="price_range_box">
+							<p class="filter_item_label">Цена: 100 руб. – 500 руб.</p> <!--Заменить на поля ввода текста-->
+							<div class="price_range_box filter_item_body">
 								<div class="price_range_control_line">
 									<div class="price_range_control_line_center"></div>
 									<button class="price_range_control price_range_control_left" type="button">Левый регулятор</button>
@@ -138,28 +140,32 @@
 							</div>
 						</div>
 						<div class="filter_item filter_fat">
-							<p>Жирность</p>
-							<input type="radio" name="fat" value="fat_0" id="fat_0_input" checked disabled>
-							<label for="fat_0_input">0%</label>
-							<input type="radio" name="fat" value="fat_10" id="fat_10_input">
-							<label for="fat_10_input">до 10%</label>
-							<input type="radio" name="fat" value="fat_30" id="fat_30_input">
-							<label for="fat_30_input">до 30%</label>
-							<input type="radio" name="fat" value="fat_30_more" id="fat_30_more_input">
-							<label for="fat_30_more_input">выше 30%</label>
+							<p class="filter_item_label">Жирность</p>
+							<div class="filter_item_body">
+								<input class="visually-hidden" type="radio" name="fat" value="fat_0" id="fat_0_input" checked disabled>
+								<label for="fat_0_input">0%</label>
+								<input class="visually-hidden" type="radio" name="fat" value="fat_10" id="fat_10_input">
+								<label for="fat_10_input">до 10%</label>
+								<input class="visually-hidden" type="radio" name="fat" value="fat_30" id="fat_30_input">
+								<label for="fat_30_input">до 30%</label>
+								<input class="visually-hidden" type="radio" name="fat" value="fat_30_more" id="fat_30_more_input">
+								<label for="fat_30_more_input">выше 30%</label>
+							</div>
 						</div>
 						<div class="filter_item filter_fillers">
-							<p>Наполнители</p>
-							<input type="checkbox" name="chocolate" id="chocolate_filler" checked>
-							<label for="chocolate_filler">шоколадные</label>
-							<input type="checkbox" name="shugar" id="shugar_filler" checked>
-							<label for="shugar_filler">сахарные присыпки</label>
-							<input type="checkbox" name="fruits" id="fruits_filler">
-							<label for="fruits_filler">фрукты</label>
-							<input type="checkbox" name="syrup" id="syrup_filler">
-							<label for="syrup_filler">сиропы</label>
-							<input type="checkbox" name="jam" id="jam_filler">
-							<label for="jam_filler">джемы</label>
+							<p class="filter_item_label">Наполнители</p>
+							<div class="filter_item_body">
+								<input class="visually-hidden" type="checkbox" name="chocolate" id="chocolate_filler" disabled checked>
+								<label for="chocolate_filler">шоколадные</label>
+								<input class="visually-hidden" type="checkbox" name="shugar" id="shugar_filler" checked>
+								<label for="shugar_filler">сахарные присыпки</label>
+								<input class="visually-hidden" type="checkbox" name="fruits" id="fruits_filler">
+								<label for="fruits_filler">фрукты</label>
+								<input class="visually-hidden" type="checkbox" name="syrup" id="syrup_filler">
+								<label for="syrup_filler">сиропы</label>
+								<input class="visually-hidden" type="checkbox" name="jam" id="jam_filler">
+								<label for="jam_filler">джемы</label>
+							</div>
 						</div>
 						<button class="filter_btn" type="submit">Применить</button>
 					</form>
@@ -262,13 +268,13 @@
 						</div>
 					</section>
 					<div class="catalog_pagination">
-						<a href="#"><</a>
+						<a class="left_arrow" href="#"><</a>
 						<a class="catalog_pagination_current" href="#">1</a>
 						<a href="#">2</a>
 						<a href="#">3</a>
 						<a href="#">4</a>
 						<a href="#">5</a>
-						<a href="#">></a>
+						<a class="right_arrow" href="#">></a>
 					</div>
 				</div>
 			</main>
