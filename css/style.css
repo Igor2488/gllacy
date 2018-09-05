@@ -757,6 +757,7 @@ footer .block_wrap{
 	flex-direction: column;
 	width: 23.3%;
 	margin-right: 2.25%;
+	margin-bottom: 20px;
 
 	text-align: center;
 
@@ -991,6 +992,8 @@ footer .block_wrap{
 	font-weight: bold;
 
 	border-radius: 15%/50%;
+
+	cursor: pointer;
 }
 
 .contacts_container{
@@ -1004,9 +1007,6 @@ footer .block_wrap{
 	background-image: url('../img/map.jpg');
 	background-position: top center;
 	background-repeat: no-repeat;
-}
-#map{ /* рекомендация Google*/
-  height: 100%;
 }
 .contacts_main{
 	position: absolute;
@@ -1072,8 +1072,22 @@ footer .block_wrap{
 	top:95px;
 }
 .pages_navigation a{
+	position: relative;
+
+	margin-right: 17px;
+
 	font-size: 14px;
 	line-height: 16px;
+}
+.pages_navigation a::after{
+	content: '»';
+
+	position: absolute;
+	top: 1px;
+	right: -13px;	
+}
+.pages_navigation a:last-child::after{
+	display: none;	
 }
 
 .page_title{
@@ -1361,7 +1375,11 @@ footer .block_wrap{
 }
 
 .catalog_pagination{
+	padding-bottom: 32px;
+
 	text-align: right;
+
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .catalog_pagination a{
 	margin-right: 0px;
@@ -1373,13 +1391,27 @@ footer .block_wrap{
 
 	border-radius: 50%;
 }
-.catalog_pagination a:first-child{
-	padding: 4px 9px;
-	margin-right: 12px;
+.catalog_pagination a.catalog_pagination_disabled{
+	opacity: 0.2;
 }
-.catalog_pagination a:last-child{
+.catalog_pagination a.catalog_pagination_disabled:hover{
+	background-color: transparent;
+}
+.catalog_pagination .left_arrow{
+	margin-right: 3px;
 	padding: 4px 9px;
-	margin-left: 14px;
+}
+.left_arrow svg,
+.right_arrow svg{
+	fill: #ffffff;
+}
+.left_arrow svg{
+	transform: rotate(180deg);
+}
+.catalog_pagination .right_arrow{
+	margin-right: -7px;
+	margin-left: 3px;
+	padding: 4px 9px;
 }
 .catalog_pagination a:hover,
 .catalog_pagination a:focus{
@@ -1397,6 +1429,10 @@ footer .block_wrap{
 	color: #323232;
 
 	background-color: rgba(255, 255, 255, 1);
+}
+.left_arrow svg:hover,
+.right_arrow svg:hover{
+
 }
 
 /* Modal and pop-up */
@@ -1555,13 +1591,10 @@ footer .block_wrap{
 	-webkit-box-align: baseline;
 	-ms-flex-align: baseline;
 	align-items: baseline;
-	height: 33px;
-	margin-bottom: 20px;
+	min-height: 33px;
+	margin-bottom: 15px;
 	
 	text-align: left;
-}
-.basket_item:last-child{
-	margin-bottom: 35px;
 }
 .basket_item p{
 	margin: 0;
@@ -1731,17 +1764,34 @@ footer .block_wrap{
 	opacity: 0.3;
 }
 
-/* выявленные неисправности, недоработки:
+/* настройки гугл-карты */
+
+#map{
+  height: 100%;
+}
+.gm-bundled-control > .gmnoprint{ /* меняем положение кнопок + и - */
+	left: -100px !important;
+	top: -264px !important;
+	transform: rotate(90deg);
+}
+.gm-control-active img{ /* поворачиваем изображение - */
+	transform: rotate(90deg);
+}
+.gm-svpc{ /* меняем положение кнопки просмотра улиц */
+	left: -200px !important;
+	top: -244px !important;
+}
+
+/* 
+	выявленные неисправности, недоработки:
 1. подсветка кнопок меню при наведении на всплывающее окно
 2. подчеркивание ссылок в хедере
 3. увеличенный маргин над кнопкой в макете 900px в малинке-шоколадке
-4. IE прыгают поля из-за выскакивающего label (все visually-hidden как-бы видны) 
-5. наведение на карточки
-6. попробовать перенести элементы управления на карте
-7. текст в разделе блог
-8. навигация страниц вверху каталога
-9. значек авторских прав в футере (заменить!)
-11. IE не совпадает цвет плейсхолдера в ie и других браузерах
-12. IE нижний паадинг полей форм меньше, чем в других браузерах
-13. IE белый текст в селект
-14. всплывающие окна как сделать правильно*/
+4. наведение на карточки
+5. текст в разделе блог
+6. IE прыгают поля из-за выскакивающего label (все visually-hidden как-бы видны) 
+7. IE не совпадает цвет плейсхолдера в ie и других браузерах
+8. IE нижний паадинг полей форм меньше, чем в других браузерах
+9. IE белый текст в селект
+10. всплывающие окна как сделать правильно
+*/

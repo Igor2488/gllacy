@@ -10,7 +10,8 @@ var image = 'img/pin_icon.png';
 					position: {lat: 59.938743, lng: 30.323058},
 					map: map,
 					icon: image
-				});
+				}),
+				map.setOptions({styles: styles});
 			}
 function setId(){
 	var good = document.getElementsByClassName('goods_item');
