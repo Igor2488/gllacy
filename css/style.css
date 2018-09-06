@@ -1232,10 +1232,12 @@ footer .block_wrap{
   -moz-appearance: none;
 	appearance: none;
 }
-.filter_sort_select:hover{
+.filter_sort_select:hover,
+.filter_sort_select:focus{
 	color: #323232;
 }
-.filter_item_body:hover::before{
+.filter_item_body:hover::before,
+.filter_sort_select:focus + .filter_item_body::before{
 	border-top-color: #323232;
 } 
 .filter_price .filter_item_body{
@@ -1272,7 +1274,8 @@ footer .block_wrap{
 
 	cursor: pointer;
 }
-.price_range_control:hover{
+.price_range_control:hover,
+.price_range_control:focus{
 	-webkit-transform: scale(1.2);
 	transform: scale(1.2);
 }
@@ -1320,7 +1323,8 @@ footer .block_wrap{
 
 	opacity: 0.8;
 }
-.filter_fat label:hover::before{
+.filter_fat label:hover::before,
+.filter_fat input[type="radio"]:focus + label::before{
 	opacity: 1;
 }
 .filter_fat input[type="radio"]:disabled + label::before{
@@ -1378,8 +1382,10 @@ footer .block_wrap{
 
 	opacity: 0.8
 }
+.filter_fillers label:hover::before,
 .filter_fillers label:hover::after,
-.filter_fillers label:hover::before{
+.filter_fillers input[type="checkbox"]:focus + label::before,
+.filter_fillers input[type="checkbox"]:focus + label::after{
 	opacity: 1;
 }
 .filter_fillers input[type="checkbox"]:disabled + label::before,
@@ -1405,7 +1411,8 @@ footer .block_wrap{
 	border: 2px solid #ffffff;
 	border-radius: 18px;
 }
-.filter_btn:hover{
+.filter_btn:hover,
+.filter_btn:focus{
 	color: #323232;
 
 	background: #fbfcfb;
