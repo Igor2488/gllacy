@@ -49,7 +49,7 @@ img {
 	background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(231, 74, 53, 1)), to(rgba(242, 104, 67, 1)));
 	background-image: linear-gradient(to top, rgba(231, 74, 53, 1) 0%, rgba(242, 104, 67, 1) 100%);
 	border: none;
-	border-radius: 11%/50%;
+	border-radius: 30px;
 	-webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
@@ -291,20 +291,14 @@ footer .block_wrap{
 	
 	background-color: transparent;
 	border-radius: 20px;
-	/* border-bottom: 5px solid transparent; */
 }
 .main_nav_item a{
-	/* position: relative; */
-
-	/* padding: 7px 13px 6px; */
-
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 700;
 	color: #ffffff;
 	
 	background-color: transparent;
-	/* border-radius: 20px; */
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -344,7 +338,7 @@ footer .block_wrap{
 	list-style: none;
 }
 .catalog_link:hover .catalog_container,
-.catalog_link:focus .catalog_container{
+.catalog_link:focus + .catalog_container{
 	display: block;
 }
 .catalog_container:hover{
@@ -1579,10 +1573,14 @@ footer .block_wrap{
 }
 .login_form .standart_link:hover,
 .login_form .standart_link:focus{
-	color: #ffbc9e;
+	color: #e84d37;
+
+	border-bottom-color: rgba(232, 77, 55, 0.3);
 }
 .login_form .standart_link:active{
-	color: #ffbc9e;
+	color: #e84d37;
+
+	border-bottom-color: rgba(232, 77, 55, 0.3);
 }
 .login_form .main_btn{
 	padding: 10px 24px;
@@ -1843,4 +1841,5 @@ footer .block_wrap{
 5. IE не совпадает цвет плейсхолдера в ie и других браузерах
 6. IE нижний паадинг полей форм меньше, чем в других браузерах
 7. IE белый текст в селект
+8. не работают по tab поля и ссылки в ховерах
 */
