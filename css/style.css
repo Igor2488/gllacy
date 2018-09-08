@@ -1,7 +1,7 @@
 html {
   height: 100%;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 *, *::after,*::before{
   -webkit-box-sizing: inherit;
@@ -308,6 +308,9 @@ footer .block_wrap{
 	background-color: #ededed;
 	-webkit-box-shadow: inset 0 2px 1px #696969;
 	box-shadow: inset 0 2px 1px #696969;
+}
+.main_nav_item:hover a:active{
+	background-color: #ededed;
 }
 
 .catalog_link{
@@ -1060,11 +1063,16 @@ li.page_active a{
 }
 
 .contacts_container{
+	min-height: 430px;
+}
+.contacts_container .block_wrap{
 	position: relative;
 }
 .map_block{
+	position: absolute;
+	left: 0;
 
-	width: 100%;
+	width: calc(100vw - (100vw - 100%));
 	height: 430px;
 
 	background-color: #ece5c9;
