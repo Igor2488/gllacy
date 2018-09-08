@@ -1063,6 +1063,7 @@ li.page_active a{
 	position: relative;
 }
 .map_block{
+
 	width: 100%;
 	height: 430px;
 
@@ -1437,12 +1438,12 @@ li.page_active a{
 	border-color: transparent;
 }
 .filter_btn:active{
+	padding: 8px 29px 10px 30px;
+
 	background-color: #ededed;
-	border-color: transparent;
+	border: none;
 	-webkit-box-shadow: inset 0 2px 1px #696969;
 	box-shadow: inset 0 2px 1px #696969;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
 	outline-color: transparent;
 }
 
@@ -1841,7 +1842,7 @@ li.page_active a{
 /* настройки гугл-карты */
 
 #map{
-  height: 100%;
+	height: 100%;
 }
 .gm-bundled-control > .gmnoprint{ /* меняем положение кнопок + и - */
 	left: -100px !important;
@@ -1868,11 +1869,7 @@ li.page_active a{
 /* 
 	выявленные неисправности, недоработки:
 1. увеличенный маргин над кнопкой в макете 900px в малинке-шоколадке
-2. наведение на карточки
-3. всплывающие окна как сделать правильно
 4. IE прыгают поля из-за выскакивающего label (все visually-hidden как-бы видны) 
 5. IE не совпадает цвет плейсхолдера в ie и других браузерах
 6. IE нижний паадинг полей форм меньше, чем в других браузерах
-7. IE белый текст в селект
-8. не работают по tab поля и ссылки в ховерах
 */
