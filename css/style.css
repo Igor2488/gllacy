@@ -1059,7 +1059,7 @@ li.page_active a{
 	font-size: 16px;
 	line-height: 24px;
 }
-.subscribe_form .main_btn{
+.subscribe_btn{
 	padding: 8px 18px;
 
 	font-size: 18px;
@@ -1764,11 +1764,16 @@ li.page_active a{
 
 .feedback_modal{
 	position: fixed;
-	top: calc(50% - 221px);
-	left: calc(50% - 239px);
-	z-index: 30;
+	top: calc(50vh - 221px);
+	left: calc(50vw - 239px);
+	/* top: 50vh; */
+	/* left: 50vw; */
+	z-index: 100;
 
 	display: none;
+}
+.feedback_modal_active{
+	display: block;
 }
 .feedback_form{
 	position: relative;
@@ -1845,7 +1850,7 @@ li.page_active a{
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 5;
+	z-index: 95;
 
 	display: none;
 	width: 100%;
@@ -1854,6 +1859,9 @@ li.page_active a{
 	background-color: #323232;
 
 	opacity: 0.3;
+}
+.modal_overlay_active{
+	display: block;
 }
 
 /* настройки гугл-карты */
