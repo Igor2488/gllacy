@@ -14,16 +14,25 @@ var image = 'img/pin_icon.png';
 				map.setOptions({styles: styles});
 			}
 
-var contactsBtn = document.getElementById('contacts_btn');
+var contactsBtn = document.querySelector('.contacts_btn');
+var closeFeedbackModalBtn = document.querySelector('.close_btn');
+var feedbackModal = document.querySelector('.feedback_modal');
+var modalOverlay = document.querySelector('.modal_overlay');
 contactsBtn.addEventListener('click', showFeedbackModal);
-var closeFeedbackModalBtn = document.getElementById('close_btn');
 closeFeedbackModalBtn.addEventListener('click', closeFeedbackModal);
-var escKeyCode = 27;
-document.addEventListener('keydown', closeFeedbackModal)
-var feedbackModal = document.getElementById('feedback_modal');
-var modalOverlay = document.getElementById('modal_overlay');
 
-function showFeedbackModal(){
+window.addEventListener('keydown', function(key){
+	if(key.keyCode === 27) {
+		key.preventDefault();
+		if(feedbackModal.classList.contains('feedback_modal_active')) {
+			feedbackModal.classList.remove('feedback_modal_active');
+			modalOverlay.classList.remove('modal_overlay_active');
+		}
+  }
+})
+
+function showFeedbackModal(evt){
+	evt.preventDefault();
 	feedbackModal.classList.add('feedback_modal_active');
 	modalOverlay.classList.add('modal_overlay_active')
 }
@@ -31,8 +40,4 @@ function showFeedbackModal(){
 function closeFeedbackModal(key){
 	feedbackModal.classList.remove('feedback_modal_active');
 	modalOverlay.classList.remove('modal_overlay_active');
-	if(key.keyCode === escKeyCode) {
-    feedbackModal.classList.remove('feedback_modal_active');
-		modalOverlay.classList.remove('modal_overlay_active');
-  }
 }
