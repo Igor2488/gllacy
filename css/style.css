@@ -736,7 +736,8 @@ li.page_active a{
 	-ms-flex-direction: column;
 	flex-direction: column;
 	width: 48.866%;
-	padding: 16px 20px 23px;
+	min-height: 230px;
+	padding: 16px 20px 70px;
 
 	font-size: 18px;
 	line-height: 22px;
@@ -758,9 +759,10 @@ li.page_active a{
 	line-height: 41px;
 }
 .bonuses_block .main_btn{
-	-ms-flex-item-align: end;
-	align-self: flex-end;
-	margin-top: 44px;
+	position: absolute;
+	bottom: 23px;
+	right: 20px;
+
 	padding: 11px 23px 13px 23px;
 
 	border-radius: 25px;
@@ -1015,15 +1017,17 @@ li.page_active a{
 	padding: 5px 6px;
 
 	background-color: #f8f7f4;
-	background-image: linear-gradient(120deg, #ffffff 0%, #ffffff 2.5%, #92cdff 2.5%, #92cdff 5%, #ffffff 5%, #ffffff 7.5%, #fe9e90 7.5%, #fe9e90 10%, #ffffff 10%, #ffffff 12.5%, #92cdff 12.5%, #92cdff 15%, #ffffff 15%, #ffffff 17.5%, #fe9e90 17.5%, #fe9e90 20%, #ffffff 20%, #ffffff 22.5%, #92cdff 22.5%, #92cdff 25%, #ffffff 25%, #ffffff 27.5%, #fe9e90 27.5%, #fe9e90 30%, #ffffff 30%, #ffffff 32.5%, #92cdff 32.2%, #92cdff 35%, #ffffff 35%, #ffffff 37.5%, #fe9e90 37.5%, #fe9e90 40%, #ffffff 40%, #ffffff 42.5%, #92cdff 42.5%, #92cdff 45%, #ffffff 45%, #ffffff 47.5%, #fe9e90 47.5%, #fe9e90 50%, #ffffff 50%, #ffffff 52.5%, #92cdff 52.5%, #92cdff 55%, #ffffff 55%, #ffffff 57.5%, #fe9e90 57.5%, #fe9e90 60%, #ffffff 60%, #ffffff 62.5%, #92cdff 62.5%, #92cdff 65%, #ffffff 65%, #ffffff 67.5%, #fe9e90 67.5%, #fe9e90 70%, #ffffff 70%, #ffffff 72.5%, #92cdff 72.5%, #92cdff 75%, #ffffff 75%, #ffffff 77.5%, #fe9e90 77.5%, #fe9e90 80%, #ffffff 80%, #ffffff 82.5%, #92cdff 82.5%, #92cdff 85%, #ffffff 85%, #ffffff 87.5%, #fe9e90 87.5%, #fe9e90 90%, #ffffff 90%, #ffffff 92.5%, #92cdff 92.5%, #92cdff 95%, #ffffff 95%, #ffffff 97.5%, #fe9e90 97.5%, #fe9e90 99%, #ffffff 99%, #ffffff 100%);
+	background-image: linear-gradient(140deg, #ffffff 0%, #ffffff 2.5%, #92cdff 2.5%, #92cdff 5%, #ffffff 5%, #ffffff 7.5%, #fe9e90 7.5%, #fe9e90 10%, #ffffff 10%, #ffffff 12.5%, #92cdff 12.5%, #92cdff 15%, #ffffff 15%, #ffffff 17.5%, #fe9e90 17.5%, #fe9e90 20%, #ffffff 20%, #ffffff 22.5%, #92cdff 22.5%, #92cdff 25%, #ffffff 25%, #ffffff 27.5%, #fe9e90 27.5%, #fe9e90 30%, #ffffff 30%, #ffffff 32.5%, #92cdff 32.2%, #92cdff 35%, #ffffff 35%, #ffffff 37.5%, #fe9e90 37.5%, #fe9e90 40%, #ffffff 40%, #ffffff 42.5%, #92cdff 42.5%, #92cdff 45%, #ffffff 45%, #ffffff 47.5%, #fe9e90 47.5%, #fe9e90 50%, #ffffff 50%, #ffffff 52.5%, #92cdff 52.5%, #92cdff 55%, #ffffff 55%, #ffffff 57.5%, #fe9e90 57.5%, #fe9e90 60%, #ffffff 60%, #ffffff 62.5%, #92cdff 62.5%, #92cdff 65%, #ffffff 65%, #ffffff 67.5%, #fe9e90 67.5%, #fe9e90 70%, #ffffff 70%, #ffffff 72.5%, #92cdff 72.5%, #92cdff 75%, #ffffff 75%, #ffffff 77.5%, #fe9e90 77.5%, #fe9e90 80%, #ffffff 80%, #ffffff 82.5%, #92cdff 82.5%, #92cdff 85%, #ffffff 85%, #ffffff 87.5%, #fe9e90 87.5%, #fe9e90 90%, #ffffff 90%, #ffffff 92.5%, #92cdff 92.5%, #92cdff 95%, #ffffff 95%, #ffffff 97.5%, #fe9e90 97.5%, #fe9e90 99%, #ffffff 99%, #ffffff 100%);
 	border-radius: 15px;
 }
-.subscribe_block{
-	padding: 28px 21px 35px;
+.subscribe_block{ 
+	position: relative;
+
+	min-height: 210px;
+	padding: 28px 21px 85px;
 }
 .subscribe_block p{
 	margin: 0;
-	margin-bottom: 35px;
 	padding: 0;
 
 	color: #5a5a5a;
@@ -1033,12 +1037,17 @@ li.page_active a{
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
-.subscribe_form_block{
+.subscribe_form{
+	position: absolute;
+	left: 21px;
+	bottom: 35px;
+
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	width: calc(100% - 42px);
 }
-.subscribe_form_block .input_field{
+.subscribe_form .input_field{
 	-webkit-box-flex: 1;
 	-ms-flex-positive: 1;
 	flex-grow: 1;
@@ -1050,7 +1059,7 @@ li.page_active a{
 	font-size: 16px;
 	line-height: 24px;
 }
-.subscribe_form_block .main_btn{
+.subscribe_form .main_btn{
 	padding: 8px 18px;
 
 	font-size: 18px;
@@ -1867,12 +1876,12 @@ li.page_active a{
 
 
 @media screen and (max-width: 900px){
-	.bonuses_block .main_btn{
+	/* .bonuses_block .main_btn{
 		margin-top: 23px;
-	}
-	.subscribe_block p{
+	} */
+	/* .subscribe_block p{
 		margin-bottom: 13px;
-	}
+	} */
 }
 /* 
 	выявленные неисправности, недоработки:
