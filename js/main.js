@@ -1,18 +1,18 @@
 var map;
 var image = 'img/pin_icon.png';
-			function initMap() {
-				map = new google.maps.Map(document.getElementById('map'), {
-					center: {lat: 59.938743, lng: 30.323058},
-					zoom: 17
-				}),
+function initMap() {
+	map = new google.maps.Map(document.getElementById('map'), {
+		center: {lat: 59.938743, lng: 30.323058},
+		zoom: 17
+	}),
 
-				marker = new google.maps.Marker({
-					position: {lat: 59.938743, lng: 30.323058},
-					map: map,
-					icon: image
-				}),
-				map.setOptions({styles: styles});
-			}
+	marker = new google.maps.Marker({
+		position: {lat: 59.938743, lng: 30.323058},
+		map: map,
+		icon: image
+	}),
+	map.setOptions({styles: styles});
+}
 
 var contactsBtn = document.querySelector('.contacts_btn');
 var closeFeedbackModalBtn = document.querySelector('.close_btn');
@@ -24,15 +24,15 @@ var userNavLinkLogin = document.querySelector('.user_nav_link_login');
 var isStorageSupport = true;
 var storage = "";
 
-  try {
-    storage = localStorage.getItem("userNavLinkLogin");
-  } catch (err) {
-    isStorageSupport = false;
-  }
+try {
+	storage = localStorage.getItem("userNavLinkLogin");
+} catch (err) {
+	isStorageSupport = false;
+}
 
 contactsBtn.addEventListener('click', showFeedbackModal);
 closeFeedbackModalBtn.addEventListener('click', closeFeedbackModal);
-userNavLinkLogin.addEventListener('mouseover', function(evt){
+userNavLinkLogin.addEventListener('mouseover', function(){
 	var loginEmailInput = popUpLogin.querySelector('#login_email_input');
 	loginEmailInput.focus();
 })
@@ -48,7 +48,7 @@ window.addEventListener('keydown', function(key){
 			feedbackModal.classList.remove('feedback_modal_active');
 			modalOverlay.classList.remove('modal_overlay_active');
 		}
-  }
+	}
 })
 
 function showFeedbackModal(evt){
