@@ -23,7 +23,7 @@
 								<nav class="main_nav">
 									<ul class="main_menu">
 										<li class="main_nav_item catalog_link">
-											<a href="#">Каталог</a>
+											<a class="catalog_link" href="#">Каталог</a>
 											<ul class="catalog_container main_form">
 												<li class="catalog_item"><a class="catalog_novelty" href="#">Новинки</a></li>
 												<li class="catalog_item"><a href="catalog.html">Сливочное</a></li>
@@ -47,7 +47,7 @@
 										<div class="pop-up_search">
 											<form class="main_form search_form" action="https://echo.htmlacademy.ru" method="get">
 												<label class="visually-hidden" for="search_input">Введите поисковый запрос</label>
-												<input class="input_field" type="search" id="search_input" placeholder="Что ищем?">
+												<input class="input_field" type="search" id="search_input" placeholder="Что ищем?" required>
 											</form>
 										</div>
 									</li>
@@ -61,11 +61,11 @@
 											<form class="main_form login_form" action="https://echo.htmlacademy.ru" method="post">
 												<div>
 													<label class="visually-hidden" for="login_email_input">Введите адрес электронной почты</label>
-													<input class="input_field" type="email" name="login_email" id="login_email_input" placeholder="Электронная почта">
+													<input class="input_field" type="text" name="login_email" id="login_email_input" placeholder="Электронная почта" required>
 												</div>
 												<div>
 													<label class="visually-hidden" for="login_password_input">Введите пароль</label>
-													<input class="input_field" type="password" name="login_password" id="login_password_input" placeholder="Пароль">
+													<input class="input_field" type="password" name="login_password" id="login_password_input" placeholder="Пароль" required>
 												</div>
 												<div class="login_form_bottom">
 													<button class="main_btn" type="submit">Войти</button>
@@ -201,7 +201,7 @@
 									<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
 									<form class="main_form subscribe_form" action="https://echo.htmlacademy.ru" method="post">
 										<label class="visually-hidden" for="subscribe_email_input">Ваша электронная почта</label>
-										<input class="input_field" type="email" name="email" id="subscribe_email_input" placeholder="Электронная почта">
+										<input class="input_field" type="email" name="email" id="subscribe_email_input" placeholder="Электронная почта" required>
 										<button class="main_btn subscribe_btn" type="submit" id="subscribe_btn">Отправить</button>
 									</form>
 								</div>
@@ -261,11 +261,11 @@
 			<form class="main_form feedback_form" action="https://echo.htmlacademy.ru" method="post">
 				<p>Мы обязательно вам ответим!</p>
 				<label class="visually-hidden" for="feedback_name_input">Введите ваше имя</label>
-				<input class="input_field" type="text" name="name" id="feedback_name_input" placeholder="Как вас зовут?">
+				<input class="input_field" type="text" name="name" id="feedback_name_input" placeholder="Как вас зовут?" required>
 				<label class="visually-hidden" for="feedback_email_input">Введите ваш адрес электронной почты</label>
 				<input class="input_field" type="email" name="email" id="feedback_email_input" placeholder="Ваша почта для ответа?">
 				<label class="visually-hidden" for="feedback_message">Ввеите ваше сообщение</label>
-				<textarea class="input_field" name="message" id="feedback_message" placeholder="Напишите что-нибудь..."></textarea>
+				<textarea class="input_field" name="message" id="feedback_message" placeholder="Напишите что-нибудь..." required></textarea>
 				<button class="main_btn" type="submit">Отправить</button>
 				<button class="close_btn" type="button">Закрыть</button>
 			</form>

@@ -18,8 +18,28 @@ var contactsBtn = document.querySelector('.contacts_btn');
 var closeFeedbackModalBtn = document.querySelector('.close_btn');
 var feedbackModal = document.querySelector('.feedback_modal');
 var modalOverlay = document.querySelector('.modal_overlay');
+var popUpLogin = document.querySelector('.pop-up_login');
+var userNavLinkLogin = document.querySelector('.user_nav_link_login');
+
+var isStorageSupport = true;
+var storage = "";
+
+  try {
+    storage = localStorage.getItem("userNavLinkLogin");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
 contactsBtn.addEventListener('click', showFeedbackModal);
 closeFeedbackModalBtn.addEventListener('click', closeFeedbackModal);
+// userNavLinkLogin.addEventListener('mouseover', function(evt){
+// 	var loginEmailInput = popUpLogin.querySelector('#login_email_input');
+// 	loginEmailInput.focus();
+// })
+userNavLinkLogin.addEventListener('focus', function(){
+	var loginEmailInput = document.querySelector('#login_email_input');
+	loginEmailInput.focus();
+})
 
 window.addEventListener('keydown', function(key){
 	if(key.keyCode === 27) {
