@@ -103,7 +103,6 @@ img {
 	-webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
-
 .input_field{
 	color: #323232;
 
@@ -120,7 +119,6 @@ img {
 	border-color: rgba(46, 136, 228, 0.52);
 	-webkit-box-shadow: inset 0px 0px 1px 1px rgba(46, 136, 228, 0.52);
 	box-shadow: inset 0px 0px 1px 1px rgba(46, 136, 228, 0.52);
-	
 }
 .input_field::-webkit-input-placeholder{
 	color: #999999;
@@ -134,9 +132,9 @@ img {
 .input_field::-moz-placeholder{
 	color: #999999;
 }
-/* .input_field::-ms-input-placeholder{ 
+.input_field::-ms-input-placeholder{ 
 	color: #c8c8c8;
-} */
+}
 
 .standart_link{
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -305,12 +303,9 @@ footer .block_wrap{
 	background-color: #f7f6f3;
 }
 .main_nav_item:active{
-	background-color: #ededed;
+	background-color: #f7f6f3;
 	-webkit-box-shadow: inset 0 2px 1px #696969;
 	box-shadow: inset 0 2px 1px #696969;
-}
-.main_nav_item:hover a:active{
-	background-color: #ededed;
 }
 
 .catalog_link{
@@ -605,12 +600,12 @@ li.page_active a{
 	font-size: 13px;
 	line-height: 18px;
 }
-.info_links_block span{
+.info_links_block .special_link{
 	position: relative;
 
 	font-weight: 700;
 }
-.info_links_block span::before{
+.info_links_block .special_link::before{
 	content: '';
 
 	position: absolute;
@@ -837,7 +832,7 @@ li.page_active a{
 	width: 107.5%;
 	height: calc(100% + 95px);
 
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 5px;
 }
 .goods_item:nth-of-type(4n){
@@ -1003,7 +998,7 @@ li.page_active a{
 
 	background-color: #ffffff;
 	background-image: url('../img/blog_bg.jpg');
-	background-position: center left;
+	background-position: 17% 39%;
 	background-repeat: no-repeat;
 	border-radius: 15px;
 }
@@ -1022,9 +1017,9 @@ li.page_active a{
 	line-height: 30px;
 	font-weight: 700;
 	color: #323232;
-	text-decoration: underline;
 
 	background-color: rgba(255, 255, 255, 0.8);
+	/* border-bottom: 2px solid #323232; */
 }
 .blog_item a:hover,
 .blog_item a:focus{
@@ -1688,18 +1683,6 @@ li.page_active a{
 	background-color: #f8f7f4;
 	border-radius: 5px;
 }
-/* .pop-up_basket::before{
-	content: '';
-
-	position: absolute;
-	top: -14px;
-	left: 0;
-
-	width: 100%;
-	height: 8px;
-
-	background-color: transparent;
-} */
 .basket_list{
 	margin: 0;
 	padding: 0;
@@ -1916,15 +1899,6 @@ li.page_active a{
 	top: -244px !important;
 }
 
-
-@media screen and (max-width: 900px){
-	/* .bonuses_block .main_btn{
-		margin-top: 23px;
-	} */
-	/* .subscribe_block p{
-		margin-bottom: 13px;
-	} */
-}
 /* 
 	выявленные неисправности, недоработки:
 1. увеличенный маргин над кнопкой в макете 900px в малинке-шоколадке

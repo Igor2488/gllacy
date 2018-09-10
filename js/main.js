@@ -32,14 +32,14 @@ var storage = "";
 
 contactsBtn.addEventListener('click', showFeedbackModal);
 closeFeedbackModalBtn.addEventListener('click', closeFeedbackModal);
-// userNavLinkLogin.addEventListener('mouseover', function(evt){
-// 	var loginEmailInput = popUpLogin.querySelector('#login_email_input');
-// 	loginEmailInput.focus();
-// })
-userNavLinkLogin.addEventListener('focus', function(){
-	var loginEmailInput = document.querySelector('#login_email_input');
+userNavLinkLogin.addEventListener('mouseover', function(evt){
+	var loginEmailInput = popUpLogin.querySelector('#login_email_input');
 	loginEmailInput.focus();
 })
+// userNavLinkLogin.addEventListener('focus', function(){
+// 	var loginEmailInput = document.querySelector('#login_email_input');
+// 	loginEmailInput.focus();
+// })
 
 window.addEventListener('keydown', function(key){
 	if(key.keyCode === 27) {
