@@ -22,7 +22,7 @@ var popUpLogin = document.querySelector('.pop-up_login');
 var userNavLinkLogin = document.querySelector('.user_nav_link_login');
 
 var isStorageSupport = true;
-var storage = "";
+var storage = '';
 
 try {
 	storage = localStorage.getItem("userNavLinkLogin");
