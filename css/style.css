@@ -530,20 +530,18 @@ footer .block_wrap{
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
 	padding: 18px 0 22px;
 }
 .social_btn_container{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-wrap: wrap;
 	width: 23.3%;
+	padding-top: 18px;
 }
 .social_btn_item{
 	margin-right: 11px;
-	margin-bottom: -14px;
 
 	font-size: 0px;
 }
@@ -580,10 +578,10 @@ footer .block_wrap{
 	-ms-flex-pack: center;
 	justify-content: center;
 	width: 48.865%;
+	padding-top: 10px;
 }
 .info_links_block{
 	margin: 0;
-	margin-bottom: -8px;
 	padding: 0;
 
 	list-style: none;
@@ -969,6 +967,7 @@ footer .block_wrap{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-wrap: wrap;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
@@ -1221,9 +1220,6 @@ p.features_item{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
 	flex-wrap: wrap;
 	width: 860px;
 	margin-bottom: 23px;
@@ -1485,6 +1481,7 @@ p.features_item{
 	display: inline-block;
 }
 .filter_btn{
+	align-self: center;
 	margin-top: 9px;
 	margin-left: auto;
 	padding: 6px 27px 8px 28px;
