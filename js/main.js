@@ -10,8 +10,7 @@ function initMap() {
 		position: {lat: 59.938743, lng: 30.323058},
 		map: map,
 		icon: image
-	}),
-	map.setOptions({styles: styles});
+	})
 }
 
 var contactsBtn = document.querySelector('.contacts_btn');
@@ -20,12 +19,13 @@ var feedbackModal = document.querySelector('.feedback_modal');
 var modalOverlay = document.querySelector('.modal_overlay');
 var popUpLogin = document.querySelector('.pop-up_login');
 var userNavLinkLogin = document.querySelector('.user_nav_link_login');
+var modalFeedbackNameInput = feedbackModal.querySelector('#feedback_name_input');
 
 var isStorageSupport = true;
 var storage = '';
 
 try {
-	storage = localStorage.getItem("userNavLinkLogin");
+	storage = localStorage.getItem('userNavLinkLogin');
 } catch (err) {
 	isStorageSupport = false;
 }
@@ -54,7 +54,9 @@ window.addEventListener('keydown', function(key){
 function showFeedbackModal(evt){
 	evt.preventDefault();
 	feedbackModal.classList.add('feedback_modal_active');
-	modalOverlay.classList.add('modal_overlay_active')
+	modalOverlay.classList.add('modal_overlay_active');
+	modalFeedbackNameInput.focus();
+
 }
 
 function closeFeedbackModal(key){

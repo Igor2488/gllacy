@@ -1178,16 +1178,17 @@ p.features_item{
 
 /* Main Catalog.html */
 
+.inner_page .header_bottom{
+	display: flex;
+	margin-bottom: 0;
+}
 .inner_page .contacts_header{
 	margin-bottom: 0;
 }
 .pages_navigation{
-	position: relative;
-	top:-25px;
-
+	align-self: flex-end;
 	width: 100%;
 	max-width: 850px;
-	margin-bottom: -22px;
 }
 .pages_navigation a{
 	position: relative;
@@ -1808,6 +1809,8 @@ p.features_item{
 	z-index: 100;
 
 	display: none;
+
+	animation: move 0.5s linear;
 }
 .feedback_modal_active{
 	display: block;
@@ -1919,4 +1922,43 @@ p.features_item{
 .gm-svpc{ /* меняем положение кнопки просмотра улиц */
 	left: -200px !important;
 	top: -244px !important;
+}
+
+/* Анимация */
+
+@keyframes move{
+	0%{
+		transform: translateX(-2000px);
+	}
+	80%{
+		transform: skewX(25deg);
+	}
+	90%{
+		transform: skewX(-25deg);
+	}
+	100%{
+		transform: translateX(0px);
+	}
+}
+
+@keyframes shake{
+	0%{
+		transform: translateX(0px);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90%{
+		transform: translateX(-10px);
+	}
+	20%,
+	40%,
+	60%,
+	80%{
+		transform: translateX(10px);
+	}
+	100%{
+		transform: translateX(0px);
+	}
 }
