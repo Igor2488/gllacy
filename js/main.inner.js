@@ -29,3 +29,7 @@ loginSubmitBtn.addEventListener('click', function(evt){
 		localStorage.setItem('email', loginEmailInput.value);
 	}
 });
+
+userNavLinkSearch.addEventListener('mouseover', function(){
+	popUpSearchInput.focus();
+});

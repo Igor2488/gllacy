@@ -18,6 +18,8 @@ var closeFeedbackModalBtn = document.querySelector('.close_btn');
 var feedbackModal = document.querySelector('.feedback_modal');
 var modalOverlay = document.querySelector('.modal_overlay');
 var userNavLinkLogin = document.querySelector('.user_nav_link_login');
+var userNavLinkSearch = document.querySelector('.user_nav_link_search');
+var popUpSearchInput = document.querySelector('#search_input');
 var popUpLogin = document.querySelector('.pop-up_login');
 var popUpLoginForm = popUpLogin.querySelector('.login_form');
 var loginEmailInput = popUpLoginForm.querySelector('#login_email_input');
@@ -94,4 +96,8 @@ loginSubmitBtn.addEventListener('click', function(evt){
 	if(isStorageSupport){
 		localStorage.setItem('email', loginEmailInput.value);
 	}
+});
+
+userNavLinkSearch.addEventListener('mouseover', function(){
+	popUpSearchInput.focus();
 });
