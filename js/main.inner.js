@@ -1,21 +1,31 @@
-var popUpLogin = document.querySelector('.pop-up_login');
 var userNavLinkLogin = document.querySelector('.user_nav_link_login');
-var loginEmailInput = popUpLogin.querySelector('#login_email_input');
+var popUpLogin = document.querySelector('.pop-up_login');
+var popUpLoginForm = popUpLogin.querySelector('.login_form');
+var loginEmailInput = popUpLoginForm.querySelector('#login_email_input');
+var loginPasswordInput = popUpLoginForm.querySelector('#login_password_input');
+var loginSubmitBtn = popUpLoginForm.querySelector('.login_form_btn');
 
 var isStorageSupport = true;
 var storage = '';
 
 try {
-	storage = localStorage.getItem('userNavLinkLogin');
+	storage = localStorage.getItem('email');
 } catch (err) {
 	isStorageSupport = false;
 }
 
 userNavLinkLogin.addEventListener('mouseover', function(){
-	// var loginEmailInput = popUpLogin.querySelector('#login_email_input');
-	loginEmailInput.focus();
-})
-// userNavLinkLogin.addEventListener('focus', function(){
-// 	// var loginEmailInput = popUpLogin.querySelector('#login_email_input');
-// 	loginEmailInput.focus();
-// })
+	if(isStorageSupport && storage){
+		loginEmailInput.value = storage;
+		loginPasswordInput.focus();
+	}
+	else{
+		loginEmailInput.focus();
+	}
+});
+
+loginSubmitBtn.addEventListener('click', function(evt){
+	if(isStorageSupport){
+		localStorage.setItem('email', loginEmailInput.value);
+	}
+});
