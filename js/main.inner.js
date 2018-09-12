@@ -1,4 +1,6 @@
+var userNavLinkSearch = document.querySelector('.user_nav_link_search');
 var userNavLinkLogin = document.querySelector('.user_nav_link_login');
+var popUpSearchInput = document.querySelector('#search_input');
 var popUpLogin = document.querySelector('.pop-up_login');
 var popUpLoginForm = popUpLogin.querySelector('.login_form');
 var loginEmailInput = popUpLoginForm.querySelector('#login_email_input');
