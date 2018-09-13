@@ -30,7 +30,6 @@ var feedbacFormSubmitBtn = feedbackModal.querySelector('.feedback_btn')
 var feedbackFormNameInput = feedbackModal.querySelector('#feedback_name_input');
 var feedbackFormEmailInput = feedbackModal.querySelector('#feedback_email_input');
 var feedbackFormMessageInput = feedbackModal.querySelector('#feedback_message');
-
 var isStorageSupport = true;
 var storage = '';
 

@@ -6,7 +6,6 @@ var popUpLoginForm = popUpLogin.querySelector('.login_form');
 var loginEmailInput = popUpLoginForm.querySelector('#login_email_input');
 var loginPasswordInput = popUpLoginForm.querySelector('#login_password_input');
 var loginSubmitBtn = popUpLoginForm.querySelector('.login_form_btn');
-
 var isStorageSupport = true;
 var storage = '';
 
