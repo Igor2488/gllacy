@@ -3,7 +3,12 @@ var image = 'img/pin_icon.png';
 function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
 		center: {lat: 59.938743, lng: 30.323058},
-		zoom: 17
+		zoom: 17,
+		streetViewControl: false,
+		mapTypeControl: false,
+		zoomControl: true,
+    zoomControlOptions: {
+        position: google.maps.ControlPosition.BOTTOM_CENTER}
 	}),
 
 	marker = new google.maps.Marker({
@@ -25,8 +30,7 @@ var popUpLoginForm = popUpLogin.querySelector('.login_form');
 var loginEmailInput = popUpLoginForm.querySelector('#login_email_input');
 var loginPasswordInput = popUpLoginForm.querySelector('#login_password_input');
 var loginSubmitBtn = popUpLoginForm.querySelector('.login_form_btn');
-var feedbackForm = document.querySelector('.feedback_form');
-var feedbacFormSubmitBtn = feedbackModal.querySelector('.feedback_btn')
+var feedbackFormSubmitBtn = feedbackModal.querySelector('.feedback_btn')
 var feedbackFormNameInput = feedbackModal.querySelector('#feedback_name_input');
 var feedbackFormEmailInput = feedbackModal.querySelector('#feedback_email_input');
 var feedbackFormMessageInput = feedbackModal.querySelector('#feedback_message');
@@ -67,7 +71,7 @@ window.addEventListener('keydown', function(key){
 	}
 });
 
-feedbacFormSubmitBtn.addEventListener('click', function(evt){
+feedbackFormSubmitBtn.addEventListener('click', function(evt){
 	if(!feedbackFormNameInput.value || !feedbackFormEmailInput.value || !feedbackFormMessageInput.value){
 		evt.preventDefault();
 		feedbackModal.classList.remove('feedback_modal_error');

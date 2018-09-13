@@ -1724,7 +1724,7 @@ p.features_item{
 }
 .pop-up_basket{
 	width: 540px;
-	padding: 9px 15px 20px;
+	padding: 4px 15px 20px;
 
 	color: #323232;
 	text-align: right;
@@ -1735,7 +1735,7 @@ p.features_item{
 .basket_list{
 	margin: 0;
 	padding: 0;
-	padding-right: 15px;
+	padding-right: 17px;
 
 	border-bottom: 1px solid #cacac7;
 
@@ -1755,7 +1755,6 @@ p.features_item{
 }
 .basket_item p{
 	margin: 0;
-	margin-right: 30px;
 	padding: 0;
 
 	font-size: 13px;
@@ -1763,6 +1762,7 @@ p.features_item{
 }
 .basket_item p:last-child{
 	margin-right: 0;
+	margin-left: auto;
 }
 .basket_item span{
 	color: #999999;
@@ -1807,8 +1807,7 @@ p.features_item{
 	width: 217px;
 }
 .basket_item .basket_item_order{
-	width: 95px;
-	margin-right: 28px;
+	margin-left: 30px;
 }
 .basket_total_cost{
 	margin: 15px 0px 14px;
@@ -1940,18 +1939,12 @@ p.features_item{
 	height: 100%;
 }
 .gm-bundled-control > .gmnoprint{ /* меняем положение кнопок + и - */
-	left: -100px !important;
-	top: -264px !important;
 	-webkit-transform: rotate(90deg);
 	transform: rotate(90deg);
 }
-.gm-control-active img{ /* поворачиваем изображение - */
+.gm-control-active img{ /* поворачиваем изображение кнопки - */
 	-webkit-transform: rotate(90deg);
 	transform: rotate(90deg);
-}
-.gm-svpc{ /* меняем положение кнопки просмотра улиц */
-	left: -200px !important;
-	top: -244px !important;
 }
 
 /* Анимация */
