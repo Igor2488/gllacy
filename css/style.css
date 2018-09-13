@@ -1463,7 +1463,7 @@ p.features_item{
 	vertical-align: top;
 
 	background-color: transparent;
-	background-image: url(../img/checkbox-off.svg);
+	background-image: url(../img/checkbox-off_icon.svg);
 
 	opacity: 0.8
 }
@@ -1480,7 +1480,7 @@ p.features_item{
 	vertical-align: top;
 
 	background-color: transparent;
-	background-image: url(../img/checkbox-on.svg);
+	background-image: url(../img/checkbox-on_icon.svg);
 
 	opacity: 0.8
 }
@@ -1538,7 +1538,7 @@ p.features_item{
 	-webkit-box-pack: end;
 	-ms-flex-pack: end;
 	justify-content: flex-end;
-	padding-bottom: 32px;
+	padding-bottom: 30px;
 
 	text-align: right;
 
