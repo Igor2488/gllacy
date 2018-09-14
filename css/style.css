@@ -148,9 +148,9 @@ img{
 
 	border-bottom: 1px solid rgba(249, 172, 159, 0.3);
 }
-.visually-hidden:not(:focus),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden{
+.visually_hidden:not(:focus),
+input[type="checkbox"].visually_hidden,
+input[type="radio"].visually_hidden{
 	position: absolute;
 
 	width: 1px;
@@ -209,10 +209,8 @@ footer .block_wrap{
 	width: 560px;
 }
 .logo_block{
+	display: block;
 	margin-right: 10px;
-
-	font-size: 0;
-	line-height: 0;
 }
 .logo_block img{
 	max-width: 154px;
@@ -552,8 +550,6 @@ footer .block_wrap{
 }
 .social_btn_item{
 	margin-right: 11px;
-
-	font-size: 0px;
 }
 .social_btn_item:last-child{
 	margin-right: 0;
@@ -1550,8 +1546,10 @@ p.features_item{
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .catalog_pagination a{
-	margin-left: 4px;
-	padding: 3px 8px 2px;
+	display: inline-block;
+	margin-left: 3px;
+	padding: 4px 8px 0px 9px;
+	vertical-align: top;
 
 	font-size: 16px;
 	line-height: 18px;
