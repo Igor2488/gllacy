@@ -185,7 +185,7 @@ input[type="radio"].visually_hidden{
 	padding: 9px 2.25% 0;
 }
 main .block_wrap,
-footer .block_wrap{
+footer.block_wrap{
 	padding-top: 0;
 }
 
@@ -1527,7 +1527,8 @@ p.features_item{
 }
 .filter_fillers input[type="checkbox"]:checked + label::before{
 	display: none;
-}.filter_fillers input[type="checkbox"]:checked + label::after{
+}
+.filter_fillers input[type="checkbox"]:checked + label::after{
 	display: inline-block;
 }
 .filter_btn{
