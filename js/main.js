@@ -60,6 +60,12 @@ closeFeedbackModalBtn.addEventListener('click', function closeFeedbackModal(key)
 	feedbackModal.classList.remove('feedback_modal_error');
 });
 
+modalOverlay.addEventListener('click', function(){
+	feedbackModal.classList.remove('feedback_modal_active');
+	modalOverlay.classList.remove('modal_overlay_active');
+	feedbackModal.classList.remove('feedback_modal_error');
+});
+
 window.addEventListener('keydown', function(key){
 	if(key.keyCode === 27) {
 		key.preventDefault();
