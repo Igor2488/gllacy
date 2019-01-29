@@ -4,7 +4,7 @@
 * Наставник: [Виктория Коваленко](https://up.htmlacademy.ru/htmlcss/22/user/42638).
 
 ---
-[Посмотреть в готовом виде](https://edmsl-compilation.000webhostapp.com/gglacy/index.html)
+[Посмотреть в готовом виде](https://edmsl-compilation.000webhostapp.com/gllacy/index.html)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
